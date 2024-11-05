@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
@@ -45,14 +48,16 @@
     <Compile Include="EventsTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\B24 Ex04 May Hajbi 313226979\Ex04.Menus.Interfaces.csproj">
-      <Project>{2bf39492-a58d-4838-b0ab-9b45f28e3d9d}</Project>
-      <Name>Ex04.Menus.Interfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Ex04.Menus.Events\Ex04.Menus.Events.csproj">
       <Project>{c02f39d8-bec1-4874-8a3d-b46feabcdc6e}</Project>
       <Name>Ex04.Menus.Events</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Ex04.Menus.Interfaces, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
